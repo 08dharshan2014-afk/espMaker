@@ -1,47 +1,4 @@
-<!DOCTYPE html>  <html>  
-<head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
-<title>ESP32 Hand LED Control</title>  <style>  
-  
-body{  
-background:black;  
-color:white;  
-text-align:center;  
-font-family:sans-serif;  
-margin:0;  
-transition:0.4s;  
-}  
-  
-body.light{  
-background:radial-gradient(circle,#fff176,#000000);  
-color:black;  
-}  
-  
-video{  
-width:100%;  
-transform:scaleX(-1);  
-border-bottom:2px solid #333;  
-}  
-  
-#led{  
-width:140px;  
-height:140px;  
-border-radius:50%;  
-background:#111;  
-margin:25px auto;  
-transition:0.3s;  
-box-shadow:inset 0 0 10px #000;  
-}  
-  
-#led.on{  
-background:#00ff00;  
-box-shadow:  
-0 0 10px #00ff00,  
-0 0 30px #00ff00,  
-0 0 70px #00ff00,  
-0 0 120px #00ff00,  
-inset 0 0 20px #00f…
-[7:28 pm, 23/3/2026] Dharshan: #include <WiFi.h>
+#include <WiFi.h>
 #include <WebServer.h>
 
 const char* ssid = "ESP32_LED";
